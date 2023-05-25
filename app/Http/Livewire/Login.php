@@ -26,7 +26,7 @@ class Login extends Component
             return redirect()->to('/home');
         } else {
             session()->flash('error', 'Invalid Credential');
-            return redirect('/login');
+            return redirect('/');
         }
     }
 }

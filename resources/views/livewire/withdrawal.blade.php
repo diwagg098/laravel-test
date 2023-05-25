@@ -1,4 +1,4 @@
-  <div class="container-fluid">
+<div class="container-fluid">
     <div class="row">
     <div class="col-md-3 sidebar">
         <h1 class="text-light">Features</h1>
@@ -18,18 +18,18 @@
         <div class="container">
             <div class="row justify-content-center">
               <div class="col-md-6">
-                <h1 class="text-center">Deposit</h1>
+                <h1 class="text-center">Withdrawals</h1>
                 @if (session()->has('success'))
                 <div class="alert alert-success">
                     {{ session('success') }}
                 </div>
                 @endif
-                <form wire:submit.prevent="deposit">
+                <form wire:submit.prevent="withdrawal">
                   <div class="form-group">
-                    <label for="name">Deposit Amount</label>
-                    <input type="number" id="amount" class="form-control" wire:model="amount" required placeholder="Deposit Amount">
+                    <label for="name">Withdrawal Amount</label>
+                    <input type="number" id="amount" class="form-control" wire:model="amount" required placeholder="Withdrawal Amount">
                   </div>
-                  <button type="submit" class="btn btn-primary btn-block">Deposit</button>
+                  <button type="submit" class="btn btn-primary btn-block">Withdrawal</button>
                 </form>
               </div>
             </div>

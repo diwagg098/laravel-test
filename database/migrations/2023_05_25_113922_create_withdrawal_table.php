@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('withdrawal', function (Blueprint $table) {
+        Schema::create('withdrawals', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id');
             $table->integer('amount');

@@ -20,3 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+// payment gateaway api
+Route::post('/deposit', [ApiController::class, 'deposit']);
