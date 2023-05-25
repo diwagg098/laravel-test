@@ -18,7 +18,8 @@ RUN composer install --no-interaction --no-scripts --no-progress
 
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
-RUN php artisan migrate
+RUN php artisan migrate --force
+
 RUN php artisan queue:work --tries=3 --timeout=90
 
 CMD php artisan serve --host=0.0.0.0 --port=8000
