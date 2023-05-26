@@ -16,6 +16,7 @@
             <label for="password">Password</label>
             <input type="password" class="form-control" wire:model="password" id="password">
           </div>
+          <a href="/register">Need Register ?</a>
           <button type="submit" class="btn btn-primary btn-block">Login</button>
         </form>
     </div>

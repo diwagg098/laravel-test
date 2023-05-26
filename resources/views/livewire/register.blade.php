@@ -19,6 +19,7 @@
             <label for="confirmPassword">Confirm Password</label>
             <input type="password" id="passwordConfirmation" wire:model="passwordConfirmation" required class="form-control" placeholder="Re-type Password">
           </div>
+          <a href="/login">Have account ?</a>
           <button type="submit" class="btn btn-primary btn-block">Register</button>
         </form>
       </div>
